@@ -26,4 +26,19 @@ var twoSum = function(nums, target) {
 
 
 
-twoSum([2, 7, 11, 15], 9)
+function twoSum2(nums, target) {
+    let map = {}
+    let item = 0
+    for (let i = 0; i < nums.length; i++) {
+        if (map[nums[i]] >= 0) {
+            return [map[nums[i]], i]
+        }
+        item = target - nums[i]
+        map[item] = i
+    }
+    return false
+}
+
+
+
+console.log(twoSum2([2, 7, 11, 15], 9))
