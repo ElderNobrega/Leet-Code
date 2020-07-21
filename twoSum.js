@@ -24,8 +24,8 @@ var twoSum = function(nums, target) {
     }
 }
 
-
-
+//Solution using object
+//O(n)
 function twoSum2(nums, target) {
     let map = {}
     let item = 0
