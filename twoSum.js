@@ -12,7 +12,8 @@ return [0, 1]
  */
 
 
-//solution using nested loop => O(n * m)
+//solution using nested loop 
+//Brute force => O(n^2)
 var twoSum = function(nums, target) {
     
     for (let i = 0; i < nums.length; i++) {
@@ -23,4 +24,6 @@ var twoSum = function(nums, target) {
     }
 }
 
-console.log(twoSum([2, 7, 11, 15], 9))
+
+
+twoSum([2, 7, 11, 15], 9)
